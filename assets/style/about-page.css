@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kaushan+Script&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kaushan+Script&family=Sen:wght@400..800&family=Spirax&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Sen:wght@400..800&family=Spirax&display=swap');
+
+
+.about>h1{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3.5em;
+    margin-top: 1em;
+    font-family: "Sen", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 70%);
+    letter-spacing: 1px;
+}
+
+.aboutH3{
+    font-size: 2.2em;
+    margin-left: 5.5em;
+    margin-bottom: 0em;
+    font-family: "Spirax", system-ui;
+    font-weight: 560;
+    font-style: normal;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 60%);
+    letter-spacing: 1px;
+}
+
+
+.aboutDiv1{
+    p{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 40px 12em 0em 12em ;
+        font-size: 1.4em;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: #5C5C5C;
+
+    }
+
+
+    #aboutParagraph2{
+        padding: 2.5em 10em 1em 10em ;
+    }
+}
+
+
+
+
+
+
