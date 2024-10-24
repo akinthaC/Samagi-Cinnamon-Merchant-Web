@@ -73,6 +73,7 @@ body {
     object-fit: cover;
     margin: 0;
     padding: 0;
+    filter: brightness(0.5);
 }
 .button {
     position: absolute;
