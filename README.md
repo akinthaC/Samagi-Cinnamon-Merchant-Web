@@ -1,2 +1,2 @@
-# Samagi-Cinnoman-Merchant-Web
+# Samagi-Cinnamon-Merchant-Web
 Cinnamon &amp; spices buying, exporting web site
