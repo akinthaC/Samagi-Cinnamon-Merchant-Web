@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kaushan+Script&family=Sen:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    background: rgba(17, 47, 94, 15%);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    position: fixed;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    margin-bottom: 50em;
+    z-index: 5;
+}
+
+header h2{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+    font-size: 1.8em;
+}
+
+header h2>span:nth-child(1) {
+    color: green;
+}
+header h2>span:nth-child(2) {
+    color: yellow;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.hero {
+    padding-top: 90px;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100vw;
+    height: 85vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.list {
+    display: flex;
+    transition: left 0.5s ease;
+    position: relative;
+    width: 100%;
+}
+
+.slides > img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+.button {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button > button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.dots {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.dots li {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.dots li.active {
+    width: 30px;
+
+}
+
+
+.content {
+    position: absolute;
+
+    color: white;
+    text-align: center;
+    z-index: 10;
+    width: 80%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content > h4 {
+    font-family: "Kaushan Script", cursive;
+    font-style: normal;
+    padding: 35px;
+    font-size: 2.9em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 80%);
+
+}
+
+.content > p {
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    margin-top: -1em;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 80%);
+}
