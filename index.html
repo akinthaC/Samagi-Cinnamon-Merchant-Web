@@ -12,10 +12,29 @@
 
 </head>
 <body>
-
 <header>
-    <h2> <span>S</span>am<span>a</span>gi Cinnamon Merchant</h2>
+    <div class="logo-container">
+        <img src="assets/images/heroSection/logo.png" alt="logo">
+        <h2> <span>S</span>am<span>a</span>gi Cinnamon Merchant</h2>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </header>
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('show');
+    });
+</script>
 
 
 <section class="hero">
