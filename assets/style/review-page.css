@@ -2,9 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-
-
-
 .reviews {
     box-sizing: border-box;
 }
@@ -29,9 +26,6 @@
     font-weight: 400;
     overflow-x: hidden;
 }
-
-
-
 
 .reviews {
     transition: 0.4s;

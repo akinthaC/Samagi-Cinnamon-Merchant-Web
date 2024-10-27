@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="assets/style/about-page.css">
     <link rel="stylesheet" href="assets/style/review-page.css">
 
-
+    <style>html{scroll-behavior: smooth}</style>
 </head>
 <body>
 <header>
+
     <div class="logo-container">
         <img src="assets/images/heroSection/logo.png" alt="logo">
         <h2> <span>S</span>am<span>a</span>gi Cinnamon Merchant</h2>
     </div>
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     <div class="hamburger">
@@ -29,16 +30,10 @@
         <span></span>
         <span></span>
     </div>
+
 </header>
-<script>
-    document.querySelector('.hamburger').addEventListener('click', function() {
-        document.querySelector('nav ul').classList.toggle('show');
-    });
-</script>
 
-
-<section class="hero">
-
+<section class="hero" id="home">
 
     <div class="content">
         <h4 >Our Vision</h4>
@@ -59,8 +54,6 @@
             <div class="slides" >
                 <img src="/assets/images/heroSection/pos.png">
             </div>
-
-
 
             <div class="slides">
                 <img src="/assets/images/heroSection/connect_four.png">
@@ -85,7 +78,6 @@
         </div>
     </div>
 
-
     <div class="button">
         <button id="prev">&lt;</button>
         <button id="next">&gt;</button>
@@ -101,14 +93,9 @@
         </ul>
     </div>
 
-
-
-
 </section>
 
-
-
-<section class="about">
+<section class="about" id="about">
     <h1> about us </h1>
 
     <div class="aboutDiv1">
@@ -126,8 +113,6 @@
             At Samagi Cinnamon, we value sustainability, ethical sourcing, and building long-term relationships with both our suppliers and clients. We believe in promoting fair trade practices and contributing to the well-being of our community while delivering products that satisfy the most discerning tastes.
         </p>
     </div>
-
-
 
     <div class="reviews">
         <div id="movie-card-list">
@@ -167,15 +152,13 @@
         </div>
     </div>
 
-
-
-
 </section>
 
-
-
-
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('show');
+    });
+</script>
 <script src="assets/js/animation.js"></script>
-
 </body>
 </html>

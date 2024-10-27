@@ -16,7 +16,7 @@ body{
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 8vh;
     background: rgba(17, 47, 94, 0.15);
     position: fixed;
@@ -61,8 +61,6 @@ nav ul {
     display: flex;
     gap: 2rem;
 }
-
-
 
 nav li {
     display: inline-block;
@@ -208,10 +206,8 @@ body {
 
 }
 
-
 .content {
     position: absolute;
-
     color: white;
     text-align: center;
     z-index: 10;
