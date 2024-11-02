@@ -29,7 +29,7 @@
 
 .aboutH3 {
     font-size: 1.9em;
-    margin: 0.5em 0;
+    margin: 0.5em 2em;
     font-family: "Spirax", system-ui;
     font-weight: 560;
     font-style: normal;
@@ -40,7 +40,7 @@
 /* Paragraph Styling */
 .aboutDiv1 p {
     text-align: center;
-    padding: 0 2em;
+    padding: 0 6em;
     font-size: 1.2em;
     line-height: 1.6;
     font-family: "Inter", sans-serif;
@@ -49,6 +49,7 @@
     font-style: normal;
     color: #5C5C5C;
     margin-bottom: 1.5em;
+
 }
 
 /* Additional Spacing for the Second Paragraph */

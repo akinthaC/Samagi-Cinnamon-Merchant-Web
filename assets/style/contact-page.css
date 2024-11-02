@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kaushan+Script&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kaushan+Script&family=Sen:wght@400..800&family=Spirax&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Sen:wght@400..800&family=Spirax&display=swap');
+
+
+
+/* Contact Styles*/
+#Contact{
+    position: relative;
+
+}
+
+#Contact section{
+    display: flex;
+    justify-content: center;
+    gap: 12em;
+}
+#Contact section>#form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+#Contact h3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2.8em;
+    font-family: "Sen", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+#Contact #form div>label{
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+#Contact #form div>input,textarea{
+    color: #000000;
+    opacity: 50%;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    background-color: #ffcf4b;
+    outline: none;
+    border: none;
+    resize:none;
+    width: 500px;
+    height: 10px;
+    padding: 20px;
+}
+
+#Contact #form div>textarea{
+    width: 500px;
+    height: 100px;
+}
+
+#Contact #form button{
+    font-family: "Sen", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    background-color: #fdc435;
+    padding: 8px 17px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin-left: 1em;
+}
+
+#Contact section>#find{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+}
+
+#Contact #find>div:first-child{
+    h2{
+        font-family: "Sen", sans-serif;
+        font-weight: 500;
+        font-size: 60px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    p{
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        margin-top: 0;
+    }
+    background-color: #ffe697;
+    border-radius: 30px;
+    width: 350px;
+    height: auto;
+    padding: 40px;
+}
+
+#Contact #find>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    span{
+        font-size: 1.2em;
+        font-family: "Sen", sans-serif;
+        font-weight: bold;
+    }
+    img{
+        width: 20px;
+        aspect-ratio: 1/1;
+        transition: 0.5S;
+    }
+    img:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
