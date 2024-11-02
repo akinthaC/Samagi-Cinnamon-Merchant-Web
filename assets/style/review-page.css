@@ -55,9 +55,11 @@
     margin-left: 1em;
 }
 
+
 .video-item {
     position: relative;
 }
+
 
 
 /* Styling for the thumbnail */
@@ -68,7 +70,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     transition: transform 0.5s ease;
+
+
 }
 
 .video-thumbnail img {
@@ -76,6 +81,7 @@
     height: 100%;
     object-fit: cover;
 }
+
 
 .video-thumbnail:hover{
     transform: scale(1.1);
@@ -87,3 +93,11 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+}
+

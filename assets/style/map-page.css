@@ -1,3 +1,4 @@
+
 .mapSec {
     display: flex;
     justify-content: center; /* Centers the items horizontally */
@@ -33,3 +34,9 @@
     transform: scale(1.1);
     opacity: 1;
 }
+
+.mapSec{
+    display: flex;
+
+}
+

@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="assets/style/updates-page.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/map-page.css">
+
     <link rel="stylesheet" href="assets/style/contact-page.css">
+
 
 
 </head>
@@ -103,7 +105,9 @@
     </div>
 
 
+
 </section>
+
 
 
 
@@ -141,6 +145,7 @@
                 </div>
                 <div class="video-thumbnail">
 
+
                     <iframe width="600" height="325" src="https://www.youtube.com/embed/nUW71lCfEk8?si=aD8ZenQJK1LxAhhQenablejsapi=1"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 </div>
@@ -164,6 +169,66 @@
     </div>
     </main>
 </section>
+
+<section class="about">
+
+    <main class="container">
+        <div class="aboutDiv1">
+            <h1>About Us</h1>
+            <h3 class="aboutH3">Since 2017...</h3>
+
+            <p id="aboutParagraph1">
+                Samagi Cinnamon, your trusted partner in the world of premium spices. Established in the heart of Sri Lanka, in Katandola, we specialize in exporting the finest quality Ceylon cinnamon, pepper, cardamom, and a variety of other spices.
+            </p>
+
+            <p id="aboutParagraph2">
+                With a dedication to excellence, we ensure that every spice we export meets the highest standards of quality and flavor, sourced directly from local farmers and processed with care.
+            </p>
+
+            <p id="aboutParagraph3">
+                At Samagi Cinnamon, we value sustainability, ethical sourcing, and building long-term relationships with both our suppliers and clients. We believe in promoting fair trade practices and contributing to the well-being of our community while delivering products that satisfy the most discerning tastes.
+            </p>
+        </div>
+    </main>
+</section>
+
+
+<section class="reviews">
+    <main class="container">
+        <div class="video-container">
+        <!-- Video 1 -->
+        <div class="video-item">
+            <div class="info1">
+                <h2 class="video-title">video title 01</h2>
+                <h4 class="video-description">video title 01 description</h4>
+            </div>
+            <div class="video-thumbnail">
+
+                <iframe width="600" height="325" src="https://www.youtube.com/embed/nUW71lCfEk8?si=aD8ZenQJK1LxAhhQ"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+
+        </div>
+
+
+        <!-- Video 2 -->
+        <div class="video-item">
+            <div class="video-thumbnail">
+                <!-- Replace with your actual video thumbnail -->
+                <iframe width="600" height="325" src="https://youtu.be/nUW71lCfEk8?si=3krPZY6oAucm7ch9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+            <div class="info">
+                <h2 class="video-title">video title 02</h2>
+                <h4 class="video-description">video title 02 description</h4>
+            </div>
+        </div>
+
+        <!-- Add more video items as needed -->
+    </div>
+    </main>
+</section>
+
 
 
 <section class="updates">
@@ -193,6 +258,7 @@
                     <div class="card__head">Sleepy Cat</div>
                 </div>
             </div>
+
         </div>
     </main>
 </section>
@@ -245,9 +311,24 @@
             </div>
         </div>
     </section>
+
+        </div>
+    </main>
+
 </section>
 
 
+<section id="map">
+    <div class="container">
+        <section class="mapSec">
+        <div class="box">
+            <h1>Our Location</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab accusantium atque dolore doloremque excepturi fugiat impedit, itaque labore maiores molestiae obcaecati omnis, quasi. Dolorum ea, mollitia! Omnis, velit, voluptatibus.
+            </p>
+        </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.238319906242!2d80.47533587482806!3d6.0985708938878265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae142429876b8e3%3A0x583fc9ea4b9a0661!2sSamagi%20Spice%20Exports!5e0!3m2!1sen!2slk!4v1730561108234!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
 <section id="map">
     <main class="container">
@@ -295,8 +376,38 @@
     });
 </script>
 
+            </iframe>
+
+        </section>
+    </div>
+</section>
+
+<footer class="footer">
+    <!-- Navigation Section -->
+    <div class="nav">
+        <h2>Navigate To....</h2>
+        <a href="#">>> Home</a>
+        <a href="#">>> About Us</a>
+    </div>
+
+    <!-- Description Section -->
+    <div class="description">
+        We are a well-established cinnamon manufacturing, processing and exporting organization in Sri Lanka, and the company is located in the Galadukanda electoral area of the Galle District.
+    </div>
 
 
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="assets/images/heroSection/logo.png" alt="Company Logo" class="logo">
+    </div>
+</footer>
+
+
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('nav ul').classList.toggle('show');
+    });
+</script>
 <script src="assets/js/animation.js"></script>
 
 </body>
