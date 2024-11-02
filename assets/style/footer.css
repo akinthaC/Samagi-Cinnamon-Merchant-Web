@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(to right, #fdc435, #977520);
+    color: white;
+    font-family: Arial, sans-serif;
+    border: 2px solid #CFA845;
+    border-radius: 8px;
+}
+
+/* Navigation Links */
+.footer .nav {
+    color: black;
+    margin-left: 5em;
+}
+
+.footer .nav h2 {
+    font-weight: bold;
+    margin: 0 0 10px;
+
+}
+
+.footer .nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer .nav a:hover {
+    color: #CFA845;
+}
+
+/* Description */
+.footer .description {
+    flex-grow: 1;
+    padding: 0 100px 0 100px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Logo */
+.footer .logo {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 5em;
+}
