@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="assets/style/updates-page.css">
     <link rel="stylesheet" href="assets/style/footer.css">
 
-
+    <style>html{scroll-behavior: smooth}</style>
 </head>
 <body>
+
 <header id="header">
     <main class="container">
         <div class="logo-container">
@@ -35,9 +36,34 @@
     </main>
 </header>
 
+<header>
+
+    <div class="logo-container">
+        <img src="assets/images/heroSection/logo.png" alt="logo">
+        <h2> <span>S</span>am<span>a</span>gi Cinnamon Merchant</h2>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+</header>
+
 
 <section class="hero">
     <main class="container">
+
+<section class="hero" id="home">
+
 
     <div class="content">
             <h4 >Our Vision</h4>
@@ -69,8 +95,6 @@
                 <img src="/assets/images/heroSection/pos.png">
             </div>
 
-
-
             <div class="slides">
                 <img src="/assets/images/heroSection/connect_four.png">
             </div>
@@ -94,7 +118,6 @@
         </div>
     </div>
 
-
     <div class="button">
         <button id="prev">&lt;</button>
         <button id="next">&gt;</button>
@@ -103,14 +126,19 @@
 
 
 
-
-
-
 </section>
 
 
 
+
 <section class="about">
+
+<section class="about" id="about">
+    <h1> about us </h1>
+
+    <div class="aboutDiv1">
+        <h3  class="aboutH3">Since  in 2017.....</h3>
+
 
     <main class="container">
         <div class="aboutDiv1">
@@ -124,6 +152,7 @@
             <p id="aboutParagraph2">
                 With a dedication to excellence, we ensure that every spice we export meets the highest standards of quality and flavor, sourced directly from local farmers and processed with care.
             </p>
+
 
             <p id="aboutParagraph3">
                 At Samagi Cinnamon, we value sustainability, ethical sourcing, and building long-term relationships with both our suppliers and clients. We believe in promoting fair trade practices and contributing to the well-being of our community while delivering products that satisfy the most discerning tastes.
@@ -141,6 +170,25 @@
             <div class="info1">
                 <h2 class="video-title">video title 01</h2>
                 <h4 class="video-description">video title 01 description</h4>
+
+    <div class="reviews">
+        <div id="movie-card-list">
+            <div class="movie-card" data-movie="Blade Runner">
+                <div class="movie-card__overlay"></div>
+                <div class="movie-card__share">
+                    <button class="movie-card__icon"><i class="material-icons">&#xe87d</i></button>
+                    <button class="movie-card__icon"><i class="material-icons">&#xe253</i></button>
+                    <button class="movie-card__icon"><i class="material-icons">&#xe80d</i></button>
+                </div>
+                <div class="movie-card__content">
+                    <div class="movie-card__header">
+                        <h1 class="movie-card__title">Blade Runner</h1>
+                        <h4 class="movie-card__info">(1982) Sci-Fi, Thriller</h4>
+                    </div>
+                    <p class="movie-card__desc">A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator.</p>
+                    <button class="btn btn-outline movie-card__button" type="button">Watch Trailer</button>
+                </div>
+
             </div>
             <div class="video-thumbnail">
 
@@ -149,6 +197,7 @@
             </div>
 
         </div>
+
 
         <!-- Video 2 -->
         <div class="video-item">
@@ -220,12 +269,15 @@
 </footer>
 
 
+
+</section>
+
+
 <script>
     document.querySelector('.hamburger').addEventListener('click', function() {
         document.querySelector('nav ul').classList.toggle('show');
     });
 </script>
 <script src="assets/js/animation.js"></script>
-
 </body>
 </html>

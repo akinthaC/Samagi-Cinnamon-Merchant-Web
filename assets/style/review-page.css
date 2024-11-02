@@ -32,10 +32,15 @@
     align-items: center;
 }
 
+
 /* Styling for the text information */
 .video-info {
     display: flex;
     flex-direction: column;
+
+.reviews {
+    transition: 0.4s;
+
 }
 
 .video-title {
