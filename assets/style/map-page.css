@@ -1,4 +1,35 @@
-.mapSec{
+.mapSec {
     display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center;     /* Centers the items vertically */
+    gap: 1em;
+    width: 100%;             /* Makes .mapSec take full width */
+    margin: 50px auto;          /* Centers .mapSec within its parent container */
+}
 
+.box {
+    max-width: 700px;
+
+}
+
+.box h1 {
+    font-size: 3em;
+}
+
+.box p {
+    font-size: 1em;
+}
+
+#map iframe {
+    border-radius: 2em;
+    border: none;
+    width: 400px;
+    height: 400px;
+    opacity: 0.8;
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}
+
+#map iframe:hover {
+    transform: scale(1.1);
+    opacity: 1;
 }

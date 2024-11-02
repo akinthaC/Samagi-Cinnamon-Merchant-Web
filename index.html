@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/style/updates-page.css">
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/map-page.css">
+    <link rel="stylesheet" href="assets/style/contact-page.css">
 
 
 </head>
@@ -102,11 +103,6 @@
     </div>
 
 
-
-
-
-
-
 </section>
 
 
@@ -138,33 +134,33 @@
     <main class="container">
         <div class="video-container">
         <!-- Video 1 -->
-        <div class="video-item">
-            <div class="info1">
-                <h2 class="video-title">video title 01</h2>
-                <h4 class="video-description">video title 01 description</h4>
+            <div class="video-item">
+                <div class="info1">
+                    <h2 class="video-title"> Cinnamon from Ceylon</h2>
+                    <h4 class="video-description">video title 01 description</h4>
+                </div>
+                <div class="video-thumbnail">
+
+                    <iframe width="600" height="325" src="https://www.youtube.com/embed/nUW71lCfEk8?si=aD8ZenQJK1LxAhhQenablejsapi=1"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+
             </div>
-            <div class="video-thumbnail">
-
-                <iframe width="600" height="325" src="https://www.youtube.com/embed/nUW71lCfEk8?si=aD8ZenQJK1LxAhhQ"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            </div>
-
-        </div>
 
         <!-- Video 2 -->
-        <div class="video-item">
-            <div class="video-thumbnail">
-                <!-- Replace with your actual video thumbnail -->
-                <iframe width="600" height="325" src="https://youtu.be/nUW71lCfEk8?si=3krPZY6oAucm7ch9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            </div>
-            <div class="info">
-                <h2 class="video-title">video title 02</h2>
-                <h4 class="video-description">video title 02 description</h4>
-            </div>
+            <div class="video-item">
+                <div class="video-thumbnail">
+                    <!-- Replace with your actual video thumbnail -->
+                    <iframe width="600" height="325" src="https://www.youtube.com/embed/T7_HfHRIUhM?si=11eafLNM1i8ppV-eenablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="info">
+                    <h2 class="video-title">How Cinnamon is made</h2>
+                    <h4 class="video-description">video title 02 description</h4>
+                </div>
         </div>
 
         <!-- Add more video items as needed -->
+
     </div>
     </main>
 </section>
@@ -202,8 +198,59 @@
 </section>
 
 
+<!--contact-->
+<section id="Contact">
+    <h3>Contact us</h3>
+    <section>
+        <div class="wow animate_animated animate_zoomInRight" data-wow-duration="2s" id="form">
+            <form action="" method="post">
+                <div>
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name?">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="Enter your email?">
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="phone" placeholder="Enter your phone?">
+                </div>
+                <div>
+                    <label for="message"></label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="What you want to say?"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div  class="wow animate_animated animate_zoomInLeft" data-wow-duration="2s" id="find">
+            <div>
+                <h2>Find us</h2>
+                <p>Email us - <br>
+                    samagicinnamon@gmail.com
+                </p>
+                <p>Contact us - <br>
+                    +39665464646456
+                </p>
+                <p>Address - <br>
+                    260/1, Weralu Anduwawa,<br>
+                    Mahan Edanda,Karandeniya<br>
+                    Sri Lanka
+                </p>
+            </div>
+            <div class="wow animate_animated animate_zoomInDown" data-wow-duration="2s">
+                <span>Follow us on  </span>
+                <a href="#" target="_blank"><img src="./assets/images/facebook.png" title="socialImage" alt="socialImg"></a>
+                <a href="#" target="_blank"><img src="./assets/images/tiktok.png" title="socialImage" alt="socialImg"></a>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
 <section id="map">
-    <div class="container">
+    <main class="container">
         <section class="mapSec">
         <div class="box">
             <h1>Our Location</h1>
@@ -217,26 +264,28 @@
             </iframe>
 
         </section>
-    </div>
+    </main>
 </section>
 
 <footer class="footer">
-    <!-- Navigation Section -->
-    <div class="nav">
-        <h2>Navigate To....</h2>
-        <a href="#">>> Home</a>
-        <a href="#">>> About Us</a>
-    </div>
+    <main class="container">
+        <!-- Navigation Section -->
+        <div class="nav">
+            <h2>Navigate To....</h2>
+            <a href="#">>> Home</a>
+            <a href="#">>> About Us</a>
+        </div>
 
-    <!-- Description Section -->
-    <div class="description">
-        We are a well-established cinnamon manufacturing, processing and exporting organization in Sri Lanka, and the company is located in the Galadukanda electoral area of the Galle District.
-    </div>
+        <!-- Description Section -->
+        <div class="description">
+            We are a well-established cinnamon manufacturing, processing and exporting organization in Sri Lanka, and the company is located in the Galadukanda electoral area of the Galle District.
+        </div>
 
-    <!-- Logo Section -->
-    <div class="logo">
-        <img src="assets/images/heroSection/logo.png" alt="Company Logo" class="logo">
-    </div>
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="assets/images/heroSection/logo.png" alt="Company Logo" class="logo">
+        </div>
+    </main>
 </footer>
 
 
@@ -245,6 +294,9 @@
         document.querySelector('nav ul').classList.toggle('show');
     });
 </script>
+
+
+
 <script src="assets/js/animation.js"></script>
 
 </body>
