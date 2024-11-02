@@ -1,29 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sen:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kaushan+Script&family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Container styling */
+.container {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-body{
-    background-color: #ffffff;
-}
-
-/* General header styling */
-header {
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 8vh;
     background: rgba(17, 47, 94, 0.15);
     position: fixed;
+    top: 0;
     backdrop-filter: blur(5px);
     width: 100%;
     padding: 0 2rem;
     z-index: 15;
+    margin-bottom: 2em;
+}
+
+/* Body styling */
+body {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Logo container */
@@ -36,23 +46,25 @@ header {
 header img {
     width: 50px;
     aspect-ratio: 1/1;
-    margin-right: 10px;
+    margin-right: 35px;
 }
 
-/* H2 styling */
+/* H2 styling for logo text */
 header h2 {
     font-family: "Comfortaa", sans-serif;
-    font-optical-sizing: auto;
     font-weight: bold;
     font-size: 1.8em;
+    margin: 0;
+    margin-right: 35px;
 }
 
-header h2 > span:nth-child(1) {
+/* Specific span colors within H2 */
+header h2 span:nth-child(1) {
     color: green;
 }
 
-header h2 > span:nth-child(2) {
-    color: yellow;
+header h2 span:nth-child(2) {
+    color: orange;
 }
 
 /* Navigation styling */
@@ -60,17 +72,12 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin: 0;
+    margin-left: 15em;
 }
 
 nav li {
     display: inline-block;
-    margin-left: 3em;
-
-    a:hover{
-        color: #2a9fff;
-        font-size: 1.1em;
-        transition: color 0.4s ease-in-out, font-size 0.4s ease-in-out;
-    }
 }
 
 nav a {
@@ -78,10 +85,15 @@ nav a {
     text-decoration: none;
     color: #000;
     font-weight: 600;
-
 }
 
-/* Hamburger menu styling */
+nav a:hover {
+    color: #2a9fff;
+    font-size: 1.1em;
+    transition: color 0.4s ease-in-out, font-size 0.4s ease-in-out;
+}
+
+/* Hamburger menu styling (for mobile) */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -100,7 +112,6 @@ nav a {
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
-
     }
 
     nav ul {
@@ -119,7 +130,7 @@ nav a {
     }
 
     nav ul.show {
-        height: 50vh; /* Full height to cover screen */
+        height: 50vh;
     }
 
     nav li {
@@ -128,23 +139,18 @@ nav a {
 }
 
 
-
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    overflow-x: hidden;
-}
-
 .hero {
-    padding-top: 59px;
+    padding-top: 11vh; /* Adjusted padding-top to ensure hero content is below the header */
     width: 100vw;
     overflow: hidden;
 }
 
+
+
+
 .slider {
     width: 100vw;
     height: 85vh;
-    margin: 0;
     position: relative;
     overflow: hidden;
 }
@@ -160,10 +166,9 @@ body {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    margin: 0;
-    padding: 0;
     filter: brightness(0.5);
 }
+
 .button {
     position: absolute;
     top: 50%;
@@ -185,11 +190,14 @@ body {
 
 .dots {
     position: absolute;
-    bottom: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
     list-style: none;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    margin-top: 1em;
 }
 
 .dots li {
@@ -197,13 +205,13 @@ body {
     height: 10px;
     margin: 5px;
     background-color: white;
-    border-radius: 40%;
+    border-radius: 50%;
     cursor: pointer;
+
 }
 
 .dots li.active {
     width: 30px;
-
 }
 
 .content {
@@ -212,20 +220,18 @@ body {
     text-align: center;
     z-index: 10;
     width: 80%;
-    top: 40%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .content > h4 {
     font-family: "Kaushan Script", cursive;
-    font-style: normal;
     padding: 35px;
     font-size: 2.9em;
     font-weight: 800;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 80%);
-
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .content > p {
@@ -236,7 +242,5 @@ body {
     padding: 0 10px;
     margin-top: -1em;
     font-family: "Sen", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 80%);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
