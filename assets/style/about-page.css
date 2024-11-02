@@ -16,8 +16,30 @@
     padding: 0 1.5em;
 }
 
+
 /* Title and Header Styling */
 .aboutDiv1 > h1 {
+
+.about {
+    padding: 2em 0;
+    background-image: url("../images/aboutCover.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5em;
+}
+
+/* Title and Header Styling */
+.aboutDiv1 > h1 {
+
+.about>h1{
+
+
     display: flex;
     justify-content: center;
     font-size: 2.8em;
@@ -51,6 +73,13 @@
     margin-bottom: 1.5em;
 }
 
+
+/* Additional Spacing for the Second Paragraph */
+#aboutParagraph2 {
+    padding-top: 1em;
+}
+
+
 /* Additional Spacing for the Second Paragraph */
 #aboutParagraph2 {
     padding-top: 1em;
@@ -61,12 +90,25 @@
     .aboutH3 {
         font-size: 1.5em;
         margin-left: 0;
+
     }
 
     .aboutDiv1 p {
         padding: 0 1em;
         font-size: 1em;
     }
+
+    }
+
+
+    .aboutDiv1 p {
+        padding: 0 1em;
+        font-size: 1em;
+    }
+
+    .aboutDiv1 > h1 {
+        font-size: 2em;
+
 
     .aboutDiv1 > h1 {
         font-size: 2em;

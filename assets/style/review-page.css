@@ -32,10 +32,12 @@
     align-items: center;
 }
 
+
 /* Styling for the text information */
 .video-info {
     display: flex;
     flex-direction: column;
+
 }
 
 .video-title {
@@ -79,3 +81,52 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+.reviews {
+    transition: 0.4s;
+
+}
+
+.video-title {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+}
+
+.video-description {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 5px;
+    width: 15em;
+}
+
+.info1{
+    margin-left: 1em;
+}
+
+
+
+/* Styling for the thumbnail */
+.video-thumbnail {
+    width: 35em;
+    height: 20em;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+    .video-container {
+        grid-template-columns: 1fr;
+    }
+}
+
