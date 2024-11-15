@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="assets/style/footer.css">
     <link rel="stylesheet" href="assets/style/map-page.css">
     <link rel="stylesheet" href="assets/style/contact-page.css">
-
+    <link rel="stylesheet" href="assets/style/product-page.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
 
 </head>
 <body>
@@ -56,6 +58,7 @@
                 <li></li>
                 <li></li>
                 <li></li>
+                <li></li>
             </ul>
         </div>
 
@@ -68,30 +71,34 @@
         <div class="list">
 
             <div class="slides" >
-                <img src="/assets/images/heroSection/pos.png">
+                <img src="/assets/images/heroSection/samagiGroup4.jpg">
             </div>
 
 
 
             <div class="slides">
-                <img src="/assets/images/heroSection/connect_four.png">
+                <img src="/assets/images/heroSection/samagiGroup.jpg">
             </div>
 
             <div class="slides">
-                <img src="/assets/images/heroSection/aquva.png">
+                <img src="/assets/images/heroSection/samagiGroup1.jpg">
             </div>
 
             <div class="slides">
-                <img src="/assets/images/heroSection/cinnamon.jpg">
+                <img src="/assets/images/heroSection/samagiGroup2.jpg">
             </div>
 
             <div class="slides" >
-                <img src="/assets/images/heroSection/pos.png">
+                <img src="/assets/images/heroSection/samagiGroup3.jpg">
+            </div>
+
+            <div class="slides" >
+                <img src="/assets/images/heroSection/samagiGroup4.jpg">
             </div>
 
 
             <div class="slides">
-                <img src="/assets/images/heroSection/connect_four.png">
+                <img src="/assets/images/heroSection/samagiGroup.jpg">
             </div>
         </div>
     </div>
@@ -197,6 +204,36 @@
     </main>
 </section>
 
+<section class="products ">
+    <h1>Our products</h1>
+    <main class="container swiper">
+        <div class="slider-wrapper ">
+            <div class="card-list swiper-wrapper">
+                <div class="card-item swiper-slide">
+                    <img src="./assets/images/products/img.png" alt="Product 1">
+                    <p class="badge">Samagi Product 1</p>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="./assets/images/products/img_2.png" alt="Product 2">
+                    <p class="badge">Samagi Product 2</p>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="./assets/images/products/img_3.png" alt="Product 3">
+                    <p class="badge">Samagi Product 3</p>
+                </div>
+                <div class="card-item swiper-slide">
+                    <img src="./assets/images/products/img_1.png" alt="Product 4">
+                    <p class="badge">Samagi Product 4</p>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-sider-button swiper-button-prev"></div>
+            <div class="swiper-sider-button swiper-button-next"></div>
+        </div>
+    </main>
+</section>
+
 
 <!--contact-->
 <section id="Contact">
@@ -294,6 +331,8 @@
         document.querySelector('nav ul').classList.toggle('show');
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="assets/js/product.js"></script>
 
 
 

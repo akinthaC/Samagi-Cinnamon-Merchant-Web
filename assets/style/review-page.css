@@ -11,7 +11,7 @@
     padding: 20px;
     display: flex;
     justify-content: center;
-    background-image: url("../images/img.png"), linear-gradient(to bottom, rgba(238, 231, 220, 0.21), rgba(253, 196, 53, 0.88));
+    background-image: url("../images/img_3.png"), linear-gradient(to bottom, rgba(238, 231, 220, 0.21), rgba(253, 196, 53, 0.88));
     background-size: cover;
 }
 

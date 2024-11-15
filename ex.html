@@ -2,109 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Product Showcase</title>
     <link rel="stylesheet" href="ex.css">
-    <link rel="stylesheet" href="assets/style/normalize.css">
 </head>
 <body>
-<header id="header">
-    <main class="container">
-        <div class="logo-container">
-            <img src="assets/images/heroSection/logo.png" alt="logo">
-            <h2> <span>S</span>am<span>a</span>gi Cinnamon Merchant</h2>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </main>
+<header class="header">
+    <h1>Modern Product Showcase</h1>
 </header>
 
-
-<section class="hero">
-
-    <div class="content">
-        <h4 >Our Vision</h4>
-        <p>
-            All export crops, including cinnamon, are bought at higher prices, giving more employment opportunities to the villagers.
-        </p>
-        <h4 >Our Mission</h4>
-        <p>
-            All the exports received by us are produced with quality and standards using crop health protection methods and released to the market.
-        </p>
-
-    </div>
-
-
-
-
-    <div class="slider">
-        <div class="list">
-
-            <div class="slides" >
-                <img src="/assets/images/heroSection/pos.png">
-            </div>
-
-
-
-            <div class="slides">
-                <img src="/assets/images/heroSection/connect_four.png">
-            </div>
-
-            <div class="slides">
-                <img src="/assets/images/heroSection/aquva.png">
-            </div>
-
-            <div class="slides">
-                <img src="/assets/images/heroSection/cinnamon.jpg">
-            </div>
-
-            <div class="slides" >
-                <img src="/assets/images/heroSection/pos.png">
-            </div>
-
-
-            <div class="slides">
-                <img src="/assets/images/heroSection/connect_four.png">
+<main class="product-container">
+    <!-- Product Card Example -->
+    <div class="product-card">
+        <div class="card-image">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+        </div>
+        <div class="card-content">
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">$49.99</p>
+            <div class="card-buttons">
+                <button class="btn net-btn">Net</button>
+                <button class="btn preview-btn">Preview</button>
             </div>
         </div>
     </div>
+    <!-- Repeat product cards for more products -->
+</main>
 
+<footer class="footer">
+    <button class="autoplay-btn" onclick="toggleAutoplay()">Autoplay: <span id="autoplay-status">Off</span></button>
+</footer>
 
-    <div class="button">
-        <button id="prev">&lt;</button>
-        <button id="next">&gt;</button>
-    </div>
-
-
-    <div>
-        <ul class="dots">
-            <li class="active"></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-
-
-
-
-</section>
-
-<script>
-    document.querySelector('.hamburger').addEventListener('click', function() {
-        document.querySelector('nav ul').classList.toggle('show');
-    });
-</script>
-<script src="assets/js/animation.js"></script>
-
+<script src="script.js"></script>
 </body>
 </html>
