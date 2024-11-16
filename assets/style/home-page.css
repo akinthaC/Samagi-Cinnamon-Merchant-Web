@@ -72,7 +72,7 @@ nav ul {
     display: flex;
     gap: 2rem;
     margin: 0;
-    margin-left: 17em;
+    margin-left: 10em;
 }
 
 nav li {
@@ -84,14 +84,23 @@ nav a {
     text-decoration: none;
     color: #000;
     font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #2a9fff;
+    left: 0;
+    bottom: -2px; /* Adjust distance between text and line */
+    transition: width 0.4s ease-in-out;
 }
 
-nav a:hover {
-    color: #2a9fff;
-    font-size: 1.1em;
-    transition: color 0.4s ease-in-out, font-size 0.4s ease-in-out;
+nav a:hover::after {
+    width: 100%;
 }
-
 /* Hamburger menu styling (for mobile) */
 .hamburger {
     display: none;
@@ -245,6 +254,26 @@ nav a:hover {
 
 
 @media (max-width: 1024px) and (min-width: 769px){
+    .container {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        padding: 0;
+    }
+    .logo-container{
+        h2{
+            font-size: 1.4em;
+            margin-right: 10px;
+        }
+        img{
+            margin-right: 10px;
+            width: 40px;
+        }
+    }
+
+    nav ul{
+        margin-left: 12em;
+    }
+
     .slider {
         height: 70vh;
     }
@@ -269,9 +298,6 @@ nav a:hover {
 }
 
 @media (max-width: 768px) and (min-width: 426px){
-    header{
-
-    }
     .container {
         margin-left: 0 !important;
         margin-right: auto !important;
