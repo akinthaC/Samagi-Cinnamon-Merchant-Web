@@ -2,47 +2,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kaushan+Script&family=Sen:wght@400..800&family=Spirax&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Sen:wght@400..800&family=Spirax&display=swap');
 
-.about>h1{
+.about {
+    padding: 2em 0;
+    background-image: url("../images/img_2.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.5em;
+}
+
+/* Title and Header Styling */
+.aboutDiv1 > h1 {
     display: flex;
-    justify-content: space-evenly;
-    font-size: 3.5em;
-    margin-top: 1em;
+    justify-content: center;
+    font-size: 2.8em;
     font-family: "Sen", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 70%);
-    letter-spacing: 1px;
 }
 
-.aboutH3{
-    font-size: 2.2em;
-    margin-left: 5.5em;
-    margin-bottom: 0em;
+.aboutH3 {
+    font-size: 1.9em;
+    margin: 0.5em 2em;
     font-family: "Spirax", system-ui;
     font-weight: 560;
     font-style: normal;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 60%);
-    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    color: #333;
 }
 
-.aboutDiv1{
-    p{
-        display: flex;
-        justify-content: space-evenly;
-        text-align: center;
-        padding: 40px 12em 0em 12em ;
-        font-size: 1.4em;
-        font-family: "Inter", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        color: #5C5C5C;
+/* Paragraph Styling */
+.aboutDiv1 p {
+    text-align: center;
+    padding: 0 6em;
+    font-size: 1.2em;
+    line-height: 1.6;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #5C5C5C;
+    margin-bottom: 1.5em;
 
+}
+
+/* Additional Spacing for the Second Paragraph */
+#aboutParagraph2 {
+    padding-top: 1em;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .aboutH3 {
+        font-size: 1.5em;
+        margin-left: 0;
     }
 
-    #aboutParagraph2{
-        padding: 2.5em 10em 1em 10em ;
+    .aboutDiv1 p {
+        padding: 0 1em;
+        font-size: 1em;
+    }
+
+    .aboutDiv1 > h1 {
+        font-size: 2em;
     }
 }
 

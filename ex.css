@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Product Container */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Modern Product Card */
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 5px 0;
+}
+
+.product-price {
+    font-size: 0.9rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.net-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.net-btn:hover {
+    background-color: #0056b3;
+}
+
+.preview-btn {
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.preview-btn:hover {
+    background-color: #e64a19;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.autoplay-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.autoplay-btn:hover {
+    background-color: #388E3C;
+}

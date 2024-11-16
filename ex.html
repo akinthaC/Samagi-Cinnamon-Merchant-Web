@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Product Showcase</title>
+    <link rel="stylesheet" href="ex.css">
+</head>
+<body>
+<header class="header">
+    <h1>Modern Product Showcase</h1>
+</header>
+
+<main class="product-container">
+    <!-- Product Card Example -->
+    <div class="product-card">
+        <div class="card-image">
+            <img src="https://via.placeholder.com/150" alt="Product Image">
+        </div>
+        <div class="card-content">
+            <h3 class="product-name">Product Name</h3>
+            <p class="product-price">$49.99</p>
+            <div class="card-buttons">
+                <button class="btn net-btn">Net</button>
+                <button class="btn preview-btn">Preview</button>
+            </div>
+        </div>
+    </div>
+    <!-- Repeat product cards for more products -->
+</main>
+
+<footer class="footer">
+    <button class="autoplay-btn" onclick="toggleAutoplay()">Autoplay: <span id="autoplay-status">Off</span></button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
