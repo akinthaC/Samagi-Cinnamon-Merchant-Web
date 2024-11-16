@@ -269,6 +269,25 @@ nav a:hover {
 }
 
 @media (max-width: 768px) and (min-width: 426px){
+    header{
+
+    }
+    .container {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        padding: 0;
+    }
+    .logo-container{
+        h2{
+            font-size: 1.5em;
+            margin-right: 9em;
+        }
+        img{
+            margin-right: 10px;
+            width: 40px;
+        }
+    }
+
     .content > h4 {
         font-size: 1.5em;
     }
@@ -310,6 +329,25 @@ nav a:hover {
 }
 
 @media (max-width: 426px) and (min-width: 376px) {
+    header{
+        width: auto !important;
+    }
+    .container {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        padding: 0;
+    }
+    .logo-container{
+        h2{
+            font-size: 1em;
+            margin-right: 40px;
+        }
+        img{
+            margin-right: 10px;
+            width: 40px;
+        }
+    }
+
     .content > h4 {
         font-size: 1.2em;
     }
@@ -361,6 +399,25 @@ nav a:hover {
 }
 
 @media (max-width: 376px)and (min-width: 219px){
+    header{
+        width: auto !important;
+    }
+    .container {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        padding: 0;
+    }
+    .logo-container{
+        h2{
+            font-size: 0.9em;
+            margin-right: 40px;
+        }
+        img{
+            margin-right: 10px;
+            width: 40px;
+        }
+    }
+
     .content > h4 {
         font-size: 1.2em;
     }
