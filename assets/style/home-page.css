@@ -295,6 +295,16 @@ nav a:hover::after {
         height: 35px;
         font-size: 1.2rem;
     }
+    .content {
+        position: absolute;
+        color: white;
+        text-align: center;
+        z-index: 10;
+        width: 80%;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media (max-width: 768px) and (min-width: 426px){
@@ -325,6 +335,7 @@ nav a:hover::after {
     .dots li {
         width: 8px;
         height: 8px;
+        display: none;
     }
 
     .dots li.active {
@@ -407,6 +418,7 @@ nav a:hover::after {
         z-index: 10;
         transform: translate(-50%, -50%);
         margin-top: 2em;
+
     }
     .dots li {
         width: 8px;
@@ -415,6 +427,7 @@ nav a:hover::after {
         background-color: white;
         border-radius: 50%;
         cursor: pointer;
+        display: none;
 
     }
 
@@ -480,6 +493,7 @@ nav a:hover::after {
         background-color: white;
         border-radius: 50%;
         cursor: pointer;
+        display: none;
 
     }
 
