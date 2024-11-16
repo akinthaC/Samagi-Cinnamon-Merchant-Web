@@ -260,7 +260,7 @@ nav a:hover {
     }
 
     .content > p {
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .button > button {
@@ -276,7 +276,7 @@ nav a:hover {
     }
 
     .content > p {
-        font-size: 0.9em;
+        font-size: 1.3em;
     }
 
     .dots li {
@@ -287,6 +287,27 @@ nav a:hover {
     .dots li.active {
         width: 20px;
     }
+    .button > button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: #fff;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .dots {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        left: 50%;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+        margin-top: 10em;
+    }
 }
 
 @media (max-width: 426px) and (min-width: 376px) {
@@ -295,28 +316,65 @@ nav a:hover {
     }
 
     .content > p {
-        font-size: 0.8em;
+        font-size: 1.3em;
     }
 
     .button > button {
         width: 30px;
         height: 30px;
         font-size: 1rem;
+    }
+    .button > button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: #fff;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .dots {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        left: 50%;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+        margin-top: 10em;
     }
 }
 
 @media (max-width: 376px)and (min-width: 219px){
     .content > h4 {
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     .content > p {
-        font-size: 0.8em;
+        font-size: 1.3em;
     }
 
     .button > button {
-        width: 30px;
-        height: 30px;
-        font-size: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        color: #fff;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .dots {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        left: 50%;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+        margin-top: 10em;
     }
 }
