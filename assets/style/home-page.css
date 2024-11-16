@@ -244,3 +244,79 @@ nav a:hover {
     font-family: "Sen", sans-serif;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
+
+
+@media (max-width: 1024px) and (min-width: 769px){
+    .slider {
+        height: 70vh;
+    }
+
+    .slides > img {
+        height: 70vh;
+    }
+
+    .content > h4 {
+        font-size: 2em;
+    }
+
+    .content > p {
+        font-size: 1em;
+    }
+
+    .button > button {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 426px){
+    .content > h4 {
+        font-size: 1.8em;
+    }
+
+    .content > p {
+        font-size: 0.9em;
+    }
+
+    .dots li {
+        width: 8px;
+        height: 8px;
+    }
+
+    .dots li.active {
+        width: 20px;
+    }
+}
+
+@media (max-width: 426px) and (min-width: 376px) {
+    .content > h4 {
+        font-size: 1.5em;
+    }
+
+    .content > p {
+        font-size: 0.8em;
+    }
+
+    .button > button {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 376px)and (min-width: 219px){
+    .content > h4 {
+        font-size: 1.5em;
+    }
+
+    .content > p {
+        font-size: 0.8em;
+    }
+
+    .button > button {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+}
