@@ -169,13 +169,13 @@ iframe {
     .video-item {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 0em;
+        gap: 1em;
     }
     .video-description {
         font-size: 1.2em;
         color: #333;
         margin-top: 5px;
-        margin-left: 2em;
+        margin-left: 1em;
     }
     .video-title {
         font-size: 1.4em;

@@ -31,10 +31,10 @@
     font-size: 1.9em;
     margin: 0.5em 2em;
     font-family: "Spirax", system-ui;
-    font-weight: 560;
+    font-weight: 660;
     font-style: normal;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-    color: #333;
+    color: #0e0e0e;
 }
 
 /* Paragraph Styling */
@@ -45,9 +45,9 @@
     line-height: 1.6;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    color: #2a2a2a;
+    color: #070707;
     margin-bottom: 1.5em;
 
 }
