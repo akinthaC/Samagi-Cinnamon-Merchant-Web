@@ -57,6 +57,22 @@
     padding-top: 1em;
 }
 
+@media (max-width: 1024px) and (min-width: 769px){
+    .aboutH3 {
+        font-size: 1.7em;
+        margin-left: 0;
+    }
+
+    .aboutDiv1 p {
+        padding: 0 2em;
+        font-size: 1.1em;
+    }
+
+    .aboutDiv1 > h1 {
+        font-size: 2.5em;
+    }
+}
+
 /* Responsive Styling */
 @media (max-width: 768px) {
     .aboutH3 {
