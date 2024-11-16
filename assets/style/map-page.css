@@ -14,6 +14,11 @@
 
 .box h1 {
     font-size: 3em;
+    display: flex;
+    font-family: "Sen", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .box p {
@@ -32,4 +37,45 @@
 #map iframe:hover {
     transform: scale(1.1);
     opacity: 1;
+}
+
+@media (max-width: 1024px) and (min-width: 769px){
+    .box{
+        width: 450px;
+    }
+}
+@media (max-width: 768px) and (min-width: 426px){
+    .mapSec {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .box h1{
+        justify-content: center;
+    }
+    .box p {
+        font-size: 1em;
+        text-align: center;
+    }
+    #map iframe{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width: 426px) and (min-width: 375px){
+    .mapSec {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .box h1{
+        justify-content: center;
+    }
+    .box p {
+        font-size: 1em;
+        text-align: center;
+    }
+    #map iframe{
+        width: 350px;
+        height: 350px;
+    }
 }
