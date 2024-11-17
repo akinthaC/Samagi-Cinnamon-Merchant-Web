@@ -27,8 +27,8 @@ const swiper = new Swiper('.slider-wrapper', {
         0: {
             slidesPerView: 1
         },
-        600: {
-            slidesPerView: 2
+        620: {
+            slidesPerView: 1
         },
         1024: {
             slidesPerView: 3
