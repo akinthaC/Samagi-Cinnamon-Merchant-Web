@@ -1,17 +1,21 @@
 
-
-
-
 .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     background: linear-gradient(to right, #fdc435, #977520);
     color: white;
     font-family: Arial, sans-serif;
     border: 2px solid #CFA845;
     border-radius: 8px;
+}
+
+.container{
+    display: flex;
+    align-self: center;
+    justify-items: center;
+    gap: 8em;
 }
 
 /* Navigation Links */
@@ -43,6 +47,7 @@
     padding: 0 100px 0 100px;
     color: white;
     font-size: 18px;
+    width: 600px;
 }
 
 /* Logo */

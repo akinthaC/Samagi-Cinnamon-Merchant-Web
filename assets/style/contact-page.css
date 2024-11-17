@@ -183,3 +183,23 @@
     }
 
 }
+@media (max-width: 376px)and (min-width: 219px){
+    #Contact section{
+        flex-direction: column;
+        gap: 3em;
+    }
+    #Contact h3{
+        font-size: 2em;
+    }
+
+    #Contact #form div>input,textarea{
+        font-size: 15px;
+        width: 250px;
+    }
+    #Contact #form div>textarea{
+        width: 250px;
+    }
+    #Contact #find>div:first-child{
+        width: 220px;
+    }
+}
