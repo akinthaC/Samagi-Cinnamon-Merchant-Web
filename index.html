@@ -20,16 +20,16 @@
 </head>
 <body>
 <header id="header">
-    <main class="container">
+    <main class="containerH">
         <div class="logo-container">
-            <img src="assets/images/heroSection/logo.png" alt="logo">
+            <a href="#Home"><img src="assets/images/heroSection/logo.png" alt="logo"></a>
             <h2> <span>S</span>am<span>a</span>gi Cinnamon Merchant</h2>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
         <div class="hamburger">
@@ -41,7 +41,7 @@
 </header>
 
 
-<section class="hero">
+<section id="Home" class="hero">
     <main class="container">
 
     <div class="content">
@@ -111,7 +111,7 @@
 
 </section>
 
-<section class="about">
+<section id="About" class="about">
 
     <main class="container">
         <div class="aboutDiv1">
@@ -167,6 +167,7 @@
         </div>
     </main>
 </section>
+
 
 <section class="updates">
     <main class="container">
@@ -227,6 +228,42 @@
 
 
 
+<!--
+
+<section class="updates">
+    <main class="container">
+        <div class="aboutDiv1">
+            <h1>Updates..</h1>
+            <div class="UpdateContainer">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+                    <div class="card__head">Plotting Cat</div>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg">
+                    <div class="card__head">Angry Cat</div>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Neugierige-Katze.JPG/1280px-Neugierige-Katze.JPG">
+                    <div class="card_body"> jndjknnc cnjcncnadCat</div>
+                    <div class="card__head">Curious Cat</div>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg">
+                    <div class="card__head">Prowling Cat</div>
+                </div>
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mimi%26Tigsi.jpg/1280px-Mimi%26Tigsi.jpg">
+                    <div class="card__head">Sleepy Cat</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</section>
+-->
+
+
+<!--
 <section class="products">
     <h1>Our products</h1>
     <main class="container swiper">
@@ -256,6 +293,8 @@
         </div>
     </main>
 </section>
+-->
+
 
 <section id="certification">
     <h1>We are certified........</h1>
@@ -277,26 +316,22 @@
 
 </section>
 
-&lt;!&ndash;contact&ndash;&gt;
+<!--contact-->
 <section id="Contact">
     <h3>Contact us</h3>
     <section>
         <div class="wow animate_animated animate_zoomInRight" data-wow-duration="2s" id="form">
             <form action="" method="post">
                 <div>
-                    <label for="name"></label>
                     <input type="text" name="name" id="name" placeholder="Enter your name?">
                 </div>
                 <div>
-                    <label for="email"></label>
                     <input type="text" name="email" id="email" placeholder="Enter your email?">
                 </div>
                 <div>
-                    <label for="email"></label>
                     <input type="text" name="email" id="phone" placeholder="Enter your phone?">
                 </div>
                 <div>
-                    <label for="message"></label>
                     <textarea name="message" id="message" cols="30" rows="10" placeholder="What you want to say?"></textarea>
                 </div>
                 <button type="submit">Submit</button>
@@ -342,6 +377,7 @@
         </section>
     </main>
 </section>
+<!--
 
 <footer class="footer">
     <main class="container">

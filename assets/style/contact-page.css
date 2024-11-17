@@ -75,7 +75,17 @@
     font-size: 20px;
     cursor: pointer;
     transition: background-color 0.5s ease;
-    margin-left: 1em;
+}
+
+#form input::placeholder,
+#form textarea::placeholder {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+#form input:focus::placeholder,
+#form textarea:focus::placeholder {
+    color: #666; /* Darker placeholder text on focus */
 }
 
 #Contact section>#find{
@@ -100,6 +110,7 @@
         font-size: 18px;
         margin-top: 0;
     }
+
     background-color: #ffe697;
     border-radius: 30px;
     width: 350px;
@@ -125,4 +136,50 @@
         transform: scale(1.2);
         cursor: pointer;
     }
+}
+@media (max-width: 1024px) and (min-width: 769px){
+    #Contact section{
+        gap: 3em;
+    }
+    #Contact #form div>input,textarea{
+        width: 400px;
+    }
+    #Contact #form div>textarea{
+        width: 400px;
+    }
+    #Contact #find>div:first-child{
+        width: 370px;
+    }
+}
+@media (max-width: 768px) and (min-width: 426px){
+
+    #Contact section{
+        flex-direction: column;
+        gap: 3em;
+    }
+    #Contact h3{
+        font-size: 2em;
+    }
+
+}
+@media (max-width: 426px) and (min-width: 375px){
+    #Contact section{
+        flex-direction: column;
+        gap: 3em;
+    }
+    #Contact h3{
+        font-size: 2em;
+    }
+
+    #Contact #form div>input,textarea{
+        font-size: 15px;
+        width: 300px;
+    }
+    #Contact #form div>textarea{
+        width: 300px;
+    }
+    #Contact #find>div:first-child{
+        width: 270px;
+    }
+
 }

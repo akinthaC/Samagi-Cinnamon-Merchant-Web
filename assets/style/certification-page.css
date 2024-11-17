@@ -16,7 +16,7 @@
 .certification-content {
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 50px;
     align-items: flex-start;
     padding: 20px;
 }
@@ -29,7 +29,7 @@
 
 /* Certification icons */
 .cert-icon {
-    width: 180px;
+    width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -39,4 +39,26 @@
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
+}
+
+@media (max-width: 768px) and (min-width: 426px){
+    #certification h1{
+        font-size: 2em;
+    }
+    .certification-content {
+        justify-self: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 426px) and (min-width: 375px) {
+    #certification h1{
+        font-size: 2em;
+    }
+    .certification-content {
+        justify-self: center;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
