@@ -2,6 +2,24 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+.hr1 {
+    border: none; /* Removes the default styling */
+    height: 3px; /* Sets the thickness of the line */
+    background-color: rgba(255, 60, 0, 0.68); /* Sets the color of the line */
+    margin: 0px 0; /* Optional: Adds space around the line */
+    margin-top: 0em;
+}
+
+.img{
+
+    background-image: url("../images/img_6.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center; /* Centers the image horizontally and vertically */
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
 .reviews {
     font-family: Arial, sans-serif;
     /*
@@ -11,7 +29,7 @@
     padding: 20px;
     display: flex;
     justify-content: center;
-    background-image: url("../images/img_3.png"), linear-gradient(to bottom, rgba(238, 231, 220, 0.21), rgba(253, 196, 53, 0.88));
+    background-image: url("../images/img_5.png");
     background-size: cover;
 }
 
@@ -36,6 +54,8 @@
     border-radius: 8px;
     gap: 10em;
     align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease;
 }
 
 /* Styling for the text information */
@@ -74,7 +94,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.5s ease;
+
 }
 
 .video-thumbnail img {
@@ -83,8 +103,8 @@
     object-fit: cover;
 }
 
-.video-thumbnail:hover{
-    transform: scale(1.1);
+.video-item:hover{
+    transform: scale(1.07);
 }
 
 iframe {
