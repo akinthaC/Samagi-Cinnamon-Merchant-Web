@@ -62,3 +62,13 @@
         gap: 20px;
     }
 }
+@media (max-width: 376px)and (min-width: 219px){
+    #certification h1{
+        font-size: 1.9em;
+    }
+    .certification-content {
+        justify-self: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
