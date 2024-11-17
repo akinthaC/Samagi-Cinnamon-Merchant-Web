@@ -175,6 +175,9 @@
 }
 
 @media (max-width: 768px) and (min-width: 590px){
+    .updates h1 {
+        font-size: 2em;
+    }
     .updatesImage-slider{
         width: 610px;
         height: 400px;
@@ -221,6 +224,9 @@
 }
 
 @media (max-width: 589px) and (min-width: 448px) {
+    .updates h1 {
+        font-size: 1.5em;
+    }
     .updatesImage-slider {
         width: 400px;
         height: 305px;
@@ -273,6 +279,9 @@
 }
 
 @media (max-width: 447px) and (min-width: 350px) {
+    .updates h1 {
+        font-size: 1em;
+    }
     .updatesImage-slider {
         width: 340px;
         height: 210px;
@@ -324,6 +333,9 @@
 }
 
 @media (max-width: 349px) and (min-width: 326px) {
+    .updates h1 {
+        font-size: 1em;
+    }
     .updatesImage-slider {
         width: 290px;
         height: 210px;
