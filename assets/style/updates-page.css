@@ -13,10 +13,13 @@
 }
 
 .updatesImage-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 1000px;
     height: 600px;
-    margin: 10px;
+    margin: 51px;
 }
 
 .updateSlide{
@@ -107,7 +110,7 @@
     .updatesImage-slider{
         width: 680px;
         height: 600px;
-        margin: 10px;
+        margin: 51px;
     }
 
     .updateSlide img{
@@ -152,8 +155,8 @@
 @media (max-width: 768px) and (min-width: 590px){
     .updatesImage-slider{
         width: 540px;
-        height: 500px;
-        margin: 10px;
+        height: 400px;
+        margin: 51px;
     }
 
     .updateSlide img{
@@ -181,7 +184,7 @@
     }
 
     .navigation{
-        bottom: 45px;
+        bottom: -30px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -198,8 +201,8 @@
 @media (max-width: 589px) and (min-width: 448px) {
     .updatesImage-slider {
         width: 400px;
-        height: 411px;
-        margin: 10px;
+        height: 305px;
+        margin: 51px;
     }
 
     .updateSlide img {
@@ -229,7 +232,7 @@
     }
 
     .navigation {
-        bottom: 60px;
+        bottom: -40px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -247,11 +250,11 @@
 
 }
 
-@media (max-width: 447px) and (min-width: 326px) {
+@media (max-width: 447px) and (min-width: 350px) {
     .updatesImage-slider {
         width: 340px;
-        height: 390px;
-        margin: 10px;
+        height: 210px;
+        margin: 48px;
     }
 
     .updateSlide img {
@@ -281,7 +284,7 @@
     }
 
     .navigation {
-        bottom: 8em;
+        bottom: -3em;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -298,11 +301,63 @@
     }
 }
 
+@media (max-width: 349px) and (min-width: 326px) {
+    .updatesImage-slider {
+        width: 290px;
+        height: 210px;
+        margin: 48px;
+    }
+
+    .updateSlide img {
+        z-index: 1;
+        width: 100%;
+        height: 220px;
+        border-radius: 5px;
+    }
+
+    .updateSlide .info {
+        padding: 15px 30px;
+    }
+
+    .updateSlide .info h2 {
+        color: #FFFFFF;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    .updateSlide .info p {
+        font-size: 10px;
+        width: 90%;
+        padding: 10px;
+
+    }
+
+    .navigation {
+        bottom: -3em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navigation .btn {
+        width: 6px;
+        height: 6px;
+        margin: 10px;
+
+    }
+    .updates {
+        margin: 0;
+        min-height: 22vh;
+    }
+}
+
+
 @media (max-width: 325px) and (min-width: 219px) {
     .updatesImage-slider {
         width: 200px;
-        height: 210px;
-        margin: 10px;
+        height: 156px;
+        margin: 37px;
     }
 
     .updateSlide img {
@@ -332,7 +387,7 @@
     }
 
     .navigation {
-        bottom: 10em;
+        bottom: 4em;
         left: 50%;
         transform: translateX(-50%);
     }
