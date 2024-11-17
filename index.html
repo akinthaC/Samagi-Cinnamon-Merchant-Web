@@ -167,6 +167,67 @@
         </div>
     </main>
 </section>
+
+
+<section class="updates">
+    <main class="container">
+      <div class="updatesImage-slider">
+          <div class="updateSlide active">
+              <img src="assets/images/heroSection/samagiGroup.jpg">
+              <div class="info">
+                  <h2>Slide 01</h2>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aut, culpa debitis deleniti deserunt eius eos et fuga, libero molestiae natus nemo nisi nulla recusandae rem sequi vero voluptatum.
+                  </p>
+              </div>
+          </div>
+
+          <div class="updateSlide">
+              <img src="assets/images/heroSection/samagiGroup1.jpg">
+              <div class="info">
+                  <h2>Slide 02</h2>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aut, culpa debitis deleniti deserunt eius eos et fuga, libero molestiae natus nemo nisi nulla recusandae rem sequi vero voluptatum.
+                  </p>
+              </div>
+          </div>
+
+          <div class="updateSlide">
+              <img src="assets/images/updates/samagi44.jpg">
+              <div class="info">
+                  <h2>Slide 03</h2>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aut, culpa debitis deleniti deserunt eius eos et fuga, libero molestiae natus nemo nisi nulla recusandae rem sequi vero voluptatum.
+                  </p>
+              </div>
+          </div>
+
+          <div class="updateSlide">
+              <img src="assets/images/updates/samagi33.jpg">
+              <div class="info">
+                  <h2>Slide 04</h2>
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquid aut, culpa debitis deleniti deserunt eius eos et fuga, libero molestiae natus nemo nisi nulla recusandae rem sequi vero voluptatum.
+                  </p>
+              </div>
+          </div>
+          <div class="navigation">
+              <div class="btn active"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+          </div>
+      </div>
+    </main>
+</section>
+
+
+<!--
+
+
+
+
+
 <!--
 
 <section class="updates">
@@ -200,6 +261,7 @@
     </main>
 </section>
 -->
+
 
 <!--
 <section class="products">
@@ -348,7 +410,46 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/product.js"></script>
 
+<script type="text/javascript">
+    var slider = document.querySelectorAll('.updateSlide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 0; // Start with the first slide
 
+    // Function to manually navigate
+    var manualNav = function (manual) {
+        slider.forEach((slide) => {
+            slide.classList.remove('active');
+        });
+
+        btns.forEach((btn) => {
+            btn.classList.remove('active');
+        });
+
+        slider[manual].classList.add('active');
+        btns[manual].classList.add('active');
+    };
+
+    // Add click event to buttons for manual navigation
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            manualNav(i);
+            currentSlide = i; // Update the currentSlide index
+        });
+    });
+
+    // Auto-play function
+    var autoPlay = function () {
+        currentSlide++; // Increment the slide index
+        if (currentSlide >= slider.length) {
+            currentSlide = 0; // Reset to the first slide if at the end
+        }
+        manualNav(currentSlide); // Navigate to the next slide
+    };
+
+    // Set the interval for auto-play
+    setInterval(autoPlay, 5000); // Change slides every 5 seconds
+
+</script>
 
 <script src="assets/js/animation.js"></script>
 
