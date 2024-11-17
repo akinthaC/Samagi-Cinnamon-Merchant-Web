@@ -16,7 +16,6 @@
 }
 .card-list .card-item{
     color: black;
-    width: 400px;
     padding: 35px;
     display: flex;
     flex-direction: column;
