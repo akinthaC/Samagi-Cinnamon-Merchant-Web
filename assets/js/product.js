@@ -4,10 +4,10 @@ const swiper = new Swiper('.slider-wrapper', {
     spaceBetween: 10,
 
     // Autoplay configuration
-    autoplay: {
+   /* autoplay: {
         delay: 2500, // Delay between slides in milliseconds
         disableOnInteraction: false, // Continue autoplay even if the user interacts with the slider
-    },
+    },*/
 
     // If we need pagination
     pagination: {
@@ -27,11 +27,25 @@ const swiper = new Swiper('.slider-wrapper', {
         0: {
             slidesPerView: 1
         },
-        620: {
+        350: {
             slidesPerView: 1
         },
-        1024: {
+        480: {
+            slidesPerView: 1
+        },
+        600: {
+            slidesPerView: 2
+        },
+        768: {
+            slidesPerView: 2
+        },
+        978: {
+            slidesPerView: 3
+        },
+        1198: {
             slidesPerView: 3
         }
     }
+
+
 });
