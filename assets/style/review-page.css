@@ -5,7 +5,7 @@
 .hr1 {
     border: none; /* Removes the default styling */
     height: 3px; /* Sets the thickness of the line */
-    background-color: rgba(255, 60, 0, 0.68); /* Sets the color of the line */
+    background-color: rgb(7, 7, 7); /* Sets the color of the line */
     margin: 0px 0; /* Optional: Adds space around the line */
     margin-top: 0em;
 }
@@ -19,6 +19,17 @@
     background-repeat: no-repeat;
     width: 100%;
 }
+.img1{
+
+    background-image: url("../images/img_8.png")!important;
+    background-size: cover;
+
+    background-position: center; /* Centers the image horizontally and vertically */
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 3!important;
+}
+
 
 .reviews {
     font-family: Arial, sans-serif;
@@ -29,7 +40,7 @@
     padding: 20px;
     display: flex;
     justify-content: center;
-    background-image: url("../images/img_5.png");
+
     background-size: cover;
 }
 
