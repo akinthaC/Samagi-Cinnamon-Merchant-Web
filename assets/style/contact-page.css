@@ -10,6 +10,7 @@
     background: #eeeeee;
 
 
+
 }
 
 #Contact section{
@@ -33,6 +34,8 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    margin: 0!important;
+    padding: 1.2em 0px 60px 0;
 }
 #Contact #form div>label{
     margin-left: 20px;
@@ -140,7 +143,16 @@
         cursor: pointer;
     }
 }
+@media (max-width: 1200px) and (min-width: 1025px){
+    #Contact section{
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+    }
+}
+
 @media (max-width: 1024px) and (min-width: 769px){
+
     #Contact section{
         gap: 3em;
     }
@@ -154,6 +166,40 @@
         width: 370px;
     }
 }
+
+
+@media (max-width: 931px) and (min-width: 768px){
+    #Contact section{
+        flex-direction: column;
+        gap: 3em;
+    }
+    #Contact h3{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 537px) and (min-width: 426px){
+    #Contact section{
+        flex-direction: column;
+        gap: 3em;
+    }
+    #Contact h3{
+        font-size: 2em;
+    }
+
+    #Contact #form div>input,textarea{
+        font-size: 15px;
+        width: 300px;
+    }
+    #Contact #form div>textarea{
+        width: 300px;
+    }
+    #Contact #find>div:first-child{
+        width: 270px;
+    }
+
+}
+
 @media (max-width: 768px) and (min-width: 426px){
 
     #Contact section{
@@ -185,4 +231,47 @@
         width: 270px;
     }
 
+}
+
+@media (max-width: 537px) and (min-width: 427px){
+    #Contact section{
+        flex-direction: column;
+        gap: 3em;
+    }
+    #Contact h3{
+        font-size: 2em;
+    }
+
+    #Contact #form div>input,textarea{
+        font-size: 15px;
+        width: 300px;
+    }
+    #Contact #form div>textarea{
+        width: 300px;
+    }
+    #Contact #find>div:first-child{
+        width: 270px;
+    }
+
+}
+
+@media (max-width: 376px)and (min-width: 219px){
+    #Contact section{
+        flex-direction: column;
+        gap: 3em;
+    }
+    #Contact h3{
+        font-size: 2em;
+    }
+
+    #Contact #form div>input,textarea{
+        font-size: 15px;
+        width: 250px;
+    }
+    #Contact #form div>textarea{
+        width: 250px;
+    }
+    #Contact #find>div:first-child{
+        width: 220px;
+    }
 }

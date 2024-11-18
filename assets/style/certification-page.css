@@ -10,8 +10,15 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    margin: 0!important;
+   padding: 1em;
 }
 
+
+#certification{
+    background: rgba(238, 238, 238, 0.6);
+    margin: 0;
+}
 /* Certification content container */
 .certification-content {
     display: flex;
@@ -37,8 +44,9 @@
 /* Certification text */
 .cert-item p {
     font-size: 1rem;
-    color: #555;
+    color: #333333;
     line-height: 1.5;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) and (min-width: 426px){
@@ -55,6 +63,16 @@
 @media (max-width: 426px) and (min-width: 375px) {
     #certification h1{
         font-size: 2em;
+    }
+    .certification-content {
+        justify-self: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 376px)and (min-width: 219px){
+    #certification h1{
+        font-size: 1.9em;
     }
     .certification-content {
         justify-self: center;

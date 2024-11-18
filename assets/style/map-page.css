@@ -38,7 +38,6 @@
     transform: scale(1.1);
     opacity: 1;
 }
-
 @media (max-width: 1024px) and (min-width: 769px){
     .box{
         width: 450px;
@@ -77,5 +76,23 @@
     #map iframe{
         width: 350px;
         height: 350px;
+    }
+}
+@media (max-width: 376px)and (min-width: 219px){
+    .mapSec {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .box h1{
+        justify-content: center;
+    }
+    .box p {
+        font-size: 1em;
+        text-align: center;
+    }
+    #map iframe{
+        width: 300px;
+        height: 300px;
     }
 }
