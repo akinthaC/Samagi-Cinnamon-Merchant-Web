@@ -41,8 +41,8 @@
 }
 
 .card-item>img{
-    width: 250px!important;
-    height: 250px!important;
+    width: 300px!important;
+    height: 300px!important;
 }
 
 .card-item .badge{
@@ -69,7 +69,7 @@
 }
 
 .card-list{
-    margin-left: -9em;
+    margin-left: -11em;
 }
 
 /* Base styles remain the same */
@@ -151,7 +151,7 @@
     .card-item .badge {
         font-size: 15px;
     }*/
-    .slider-wrapper.swiper-sider-button {
+    .slider-wrapper .swiper-sider-button {
         display: none !important;
     }
     .slider-wrapper  {
