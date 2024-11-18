@@ -26,7 +26,7 @@
     justify-content: center;
     background: rgba(255, 255, 255, 0.2);
     user-select: none;
-    width: 110%;
+
 
 }
 
@@ -41,8 +41,8 @@
 }
 
 .card-item>img{
-    width: 450px!important;
-    height: 450px!important;
+    width: 400px!important;
+    height: 400px!important;
 }
 
 .card-item .badge{
