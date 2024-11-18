@@ -41,7 +41,7 @@
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 ;
+    padding: 0 !important; ;
 }
 
 .updateSlide{
@@ -128,9 +128,17 @@
     opacity: 1; /* Show the active slide */
 }
 
+@media (max-width: 1300px) and (min-width: 1025px){
+    .updatesImage-slider{
+        width: 790px;
+        height: 600px;
+        margin: -12px 0px;
+    }
+}
+
 @media (max-width: 1024px) and (min-width: 769px){
     .updatesImage-slider{
-        width: 850px;
+        width: 737px;
         height: 600px;
         margin: -12px 0px;
     }
@@ -179,7 +187,7 @@
         font-size: 2em;
     }
     .updatesImage-slider{
-        width: 610px;
+        width: 576px;
         height: 400px;
         margin: 51px 0;
     }
@@ -339,7 +347,7 @@
     .updatesImage-slider {
         width: 290px;
         height: 210px;
-        margin: 5px 40px;
+        margin: 50px 0px;
     }
 
     .updateSlide img {

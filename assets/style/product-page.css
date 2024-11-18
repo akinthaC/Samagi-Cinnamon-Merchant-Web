@@ -23,6 +23,7 @@
     justify-content: center;
     background: rgba(255, 255, 255, 0.2);
     user-select: none;
+
 }
 
 .products>h1{
@@ -36,7 +37,7 @@
 }
 
 .card-item>img{
-    width: 100%;
+    width: 90%;
 }
 
 .card-item .badge{
@@ -54,6 +55,7 @@
 .slider-wrapper .swiper-pagination-bullet{
     height: 15px;
     width: 15px;
+
 }
 
 .swiper-sider-button{
