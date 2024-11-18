@@ -5,32 +5,123 @@
 html{
     scroll-behavior: smooth;
 }
-
-.containerH {
-    max-width: 1500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+* {
+    --header-height: 4rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 8vh;
-    background: rgba(17, 47, 94, 0.15);
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
     position: fixed;
     top: 0;
-    backdrop-filter: blur(5px);
+    left: 0;
     width: 100%;
-    padding: 0 2rem;
-    z-index: 15;
-    margin-bottom: 2em;
+    box-shadow: 0 2px 16px hsla(230, 75%, 32%, 0.15);
+    z-index: 100;
+    background: rgba(17, 47, 94, 0.15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--header-height);
+
+    span{
+        font-family: "Comfortaa", sans-serif;
+        font-weight: bold;
+        font-size: 1.8em;
+        color: black;
+        span:nth-child(1) {
+            color: green;
+        }
+        span:nth-child(2) {
+            color: orange;
+        }
+    }
 }
+
+.nav {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Section */
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Space between logo image and text */
+    text-decoration: none;
+}
+
+.nav__logo img {
+    width: 35px; /* Adjust logo image size */
+    height: 35px;
+}
+
+.nav__logo span {
+    color: var(--title-color);
+    font-size: 1.2rem;
+}
+
+/* Navigation Links */
+.nav__menu {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav__link {
+    color: var(--title-color);
+    text-decoration: none;
+    transition: color 0.9s;
+}
+
+.nav__link:hover {
+}
+
+/* Toggle Button */
+.nav__toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 4rem 1rem;
+        box-shadow: 0 8px 16px hsla(230, 75%, 32%, 0.15);
+        text-align: center;
+        transition: top 0.3s;
+    }
+
+    .nav__menu.show-menu {
+        top: var(--header-height);
+        background: rgba(244, 245, 248, 0.41);
+        backdrop-filter: blur(5px);
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+}
+
+
 
 /* Body styling */
 body {
@@ -49,34 +140,6 @@ body {
 header img {
     width: 50px;
     aspect-ratio: 1/1;
-    margin-right: 35px;
-}
-
-/* H2 styling for logo text */
-header h2 {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: bold;
-    font-size: 1.8em;
-    margin: 0;
-    margin-right: 10em;
-}
-
-/* Specific span colors within H2 */
-header h2 span:nth-child(1) {
-    color: green;
-}
-
-header h2 span:nth-child(2) {
-    color: orange;
-}
-
-/* Navigation styling */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: 0;
-    margin-left: 10em;
 }
 
 nav li {
@@ -91,7 +154,7 @@ nav a {
     position: relative;
     display: inline-block;
 }
-nav a::after {
+#nav-menu a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -102,28 +165,19 @@ nav a::after {
     transition: width 0.4s ease-in-out;
 }
 
-nav a:hover::after {
+#nav-menu a:hover::after {
     width: 100%;
-}
-/* Hamburger menu styling (for mobile) */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 30px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px 0;
-    transition: all 0.3s ease;
 }
 
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
+    }
+
+    header{
+        background: rgba(153, 155, 164, 0.58) !important;
+        backdrop-filter: none !important;
     }
 
     nav ul {
@@ -258,21 +312,6 @@ nav a:hover::after {
 
 
 @media (max-width: 1024px) and (min-width: 769px){
-    .containerH {
-        margin-left: 0 !important;
-        margin-right: auto !important;
-        padding: 0;
-    }
-    .logo-container{
-        h2{
-            font-size: 1.4em;
-            margin-right: 10px;
-        }
-        img{
-            margin-right: 10px;
-            width: 40px;
-        }
-    }
 
     nav ul{
         margin-left: 12em;
@@ -312,22 +351,6 @@ nav a:hover::after {
 }
 
 @media (max-width: 768px) and (min-width: 426px){
-    .containerH {
-        margin-left: 0 !important;
-        margin-right: auto !important;
-        padding: 0;
-    }
-    .logo-container{
-        h2{
-            font-size: 1.5em;
-            margin-right: 9em;
-        }
-        img{
-            margin-right: 10px;
-            width: 40px;
-        }
-    }
-
     .content > h4 {
         font-size: 1.5em;
     }
@@ -370,24 +393,6 @@ nav a:hover::after {
 }
 
 @media (max-width: 426px) and (min-width: 376px) {
-    header{
-        width: auto !important;
-    }
-    .containerH {
-        margin-left: 0 !important;
-        margin-right: auto !important;
-        padding: 0;
-    }
-    .logo-container{
-        h2{
-            font-size: 1em;
-            margin-right: 40px;
-        }
-        img{
-            margin-right: 10px;
-            width: 40px;
-        }
-    }
 
     .content > h4 {
         font-size: 1.2em;
@@ -442,24 +447,6 @@ nav a:hover::after {
 }
 
 @media (max-width: 376px)and (min-width: 219px){
-    header{
-        width: auto !important;
-    }
-    .containerH {
-        margin-left: 0 !important;
-        margin-right: auto !important;
-        padding: 0;
-    }
-    .logo-container{
-        h2{
-            font-size: 0.9em;
-            margin-right: 40px;
-        }
-        img{
-            margin-right: 10px;
-            width: 40px;
-        }
-    }
 
     .content > h4 {
         font-size: 1.2em;

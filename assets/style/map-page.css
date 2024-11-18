@@ -8,10 +8,12 @@
 }
 
 #map{
-    background:white ;
+    background: rgba(238, 238, 238, 0.6);
+
 }
 
 .box {
+
     max-width: 700px;
 
 }
@@ -30,6 +32,7 @@
 }
 
 #map iframe {
+    margin: 50px  0 50px 0;
     border-radius: 2em;
     border: none;
     width: 400px;
