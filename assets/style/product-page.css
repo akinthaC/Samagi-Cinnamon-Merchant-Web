@@ -41,8 +41,8 @@
 }
 
 .card-item>img{
-    width: 400px!important;
-    height: 400px!important;
+    width: 250px!important;
+    height: 250px!important;
 }
 
 .card-item .badge{
@@ -69,7 +69,7 @@
 }
 
 .card-list{
-    margin-left: -11em;
+    margin-left: -9em;
 }
 
 /* Base styles remain the same */
