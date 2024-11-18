@@ -19,25 +19,24 @@
 
 </head>
 <body>
-<header id="header">
-    <main class="containerH">
-        <div class="logo-container">
-            <a href="#Home"><img src="assets/images/heroSection/logo.png" alt="logo"></a>
-            <h2> <span>S</span>am<span>a</span>gi Cinnamon Merchant</h2>
+<header class="header">
+    <nav class="nav">
+        <!-- Logo with Text -->
+        <a href="#" class="nav__logo">
+            <img src="assets/images/heroSection/logo.png" alt="Logo">
+            <span> <span>S</span>am<span>a</span>gi Cinnamon Merchant</span>
+        </a>
+
+        <!-- Navigation Menu -->
+        <div class="nav__menu" id="nav-menu">
+            <a href="#Home" class="nav__link">Home</a>
+            <a href="#About" class="nav__link">About Us</a>
+            <a href="#Contact" class="nav__link">Contact</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About Us</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </main>
+
+        <!-- Toggle Button -->
+        <div class="nav__toggle" id="nav-toggle">&#9776;</div>
+    </nav>
 </header>
 
 
@@ -104,8 +103,8 @@
 
 
     <div class="button">
-        <button id="prev">&lt;</button>
-        <button id="next">&gt;</button>
+        <button id="prev"> < </button>
+        <button id="next"> > </button>
     </div>
 
 
@@ -417,7 +416,15 @@
     setInterval(autoPlay, 5000); // Change slides every 5 seconds
 
 </script>
+<script>
+    // JavaScript to toggle menu
+    const navMenu = document.getElementById('nav-menu');
+    const navToggle = document.getElementById('nav-toggle');
 
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('show-menu');
+    });
+</script>
 <script src="assets/js/animation.js"></script>
 
 </body>
