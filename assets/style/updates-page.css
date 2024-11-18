@@ -8,7 +8,7 @@
     min-height: 100vh;
 
    /* background: linear-gradient(to left, rgb(255, 255, 255), rgba(241, 130, 83, 0.44)),linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.88));*/
-    background: rgb(231, 228, 228);
+   /* background: rgb(231, 228, 228);*/
     font-family: sans-serif;
     display: flex;
     justify-content: center;

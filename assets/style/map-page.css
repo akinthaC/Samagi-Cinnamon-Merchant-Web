@@ -4,7 +4,11 @@
     align-items: center;     /* Centers the items vertically */
     gap: 1em;
     width: 100%;             /* Makes .mapSec take full width */
-    margin: 50px auto;          /* Centers .mapSec within its parent container */
+    margin: 0px    ;          /* Centers .mapSec within its parent container */
+}
+
+#map{
+    background:white ;
 }
 
 .box {
