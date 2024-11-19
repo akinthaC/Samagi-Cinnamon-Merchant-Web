@@ -1,6 +1,10 @@
 :root {
+
     /* Ensure the image path is correct, replace 'footer.png' with your actual image file */
    /* --footer-bg: linear-gradient(to right, rgb(253, 196, 53), rgb(220, 220, 220)), url("../assets/images/footer.png");*/
+
+    --footer-bg: linear-gradient(to right, rgb(253, 196, 53), rgb(220, 220, 220)), url('assets/images/footer.png');
+
     --footer-text-color: #000000;
     --footer-link-hover: #ffffff;
     --footer-padding: 2rem;
@@ -18,9 +22,13 @@ body {
 }
 
 .footer {
+
     /* Combine the gradient and the image */
     background: linear-gradient(to right, rgba(248, 173, 4, 0.8), rgba(122, 111, 73, 0.82)),
     url("/assets/images/img_7.png")!important;
+
+    background: var(--footer-bg);
+
     background-size: cover;
     background-position: center;
     color: var(--footer-text-color);
@@ -43,7 +51,9 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+
     align-items: center;
+
 }
 
 .footer .nav h2 {
@@ -104,4 +114,8 @@ body {
     .footer .logo img {
         max-width: 80px;
     }
+
 }
+
+}
+
