@@ -1,53 +1,107 @@
-
-
-
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background: linear-gradient(to right, #fdc435, #977520);
-    color: white;
-    font-family: Arial, sans-serif;
-    border: 2px solid #CFA845;
-    border-radius: 8px;
+:root {
+    /* Ensure the image path is correct, replace 'footer.png' with your actual image file */
+   /* --footer-bg: linear-gradient(to right, rgb(253, 196, 53), rgb(220, 220, 220)), url("../assets/images/footer.png");*/
+    --footer-text-color: #000000;
+    --footer-link-hover: #ffffff;
+    --footer-padding: 2rem;
+    --footer-gap: 2rem;
 }
 
-/* Navigation Links */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    /* Combine the gradient and the image */
+    background: linear-gradient(to right, rgba(248, 173, 4, 0.8), rgba(122, 111, 73, 0.82)),
+    url("/assets/images/img_7.png")!important;
+    background-size: cover;
+    background-position: center;
+    color: var(--footer-text-color);
+    padding: var(--footer-padding);
+}
+
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--footer-gap);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation Section */
 .footer .nav {
-    color: black;
-    margin-left: 5em;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
 }
 
 .footer .nav h2 {
-    font-weight: bold;
-    margin: 0 0 10px;
-
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--footer-text-color);
 }
 
 .footer .nav a {
     display: block;
-    color: #ffffff;
+    color: var(--footer-text-color);
     text-decoration: none;
-    margin: 5px 0;
+    margin: 0.5rem 0;
+    transition: color 0.3s;
 }
 
 .footer .nav a:hover {
-    color: #CFA845;
+    color: var(--footer-link-hover);
 }
 
-/* Description */
+/* Description Section */
 .footer .description {
-    flex-grow: 1;
-    padding: 0 100px 0 100px;
-    color: white;
-    font-size: 18px;
+    flex: 2;
+    min-width: 300px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--footer-text-color);
 }
 
-/* Logo */
+/* Logo Section */
 .footer .logo {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.footer .logo img {
     max-width: 100px;
+    height: auto;
     border-radius: 50%;
-    margin-right: 5em;
+    border: 2px solid var(--footer-text-color);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .nav,
+    .footer .description,
+    .footer .logo {
+        min-width: 100%;
+    }
+
+    .footer .logo img {
+        max-width: 80px;
+    }
 }

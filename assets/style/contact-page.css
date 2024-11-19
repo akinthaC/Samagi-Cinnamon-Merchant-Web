@@ -195,7 +195,7 @@
         width: 300px;
     }
     #Contact #find>div:first-child{
-        width: 270px;
+        width: 300px;
     }
 
 }
@@ -208,27 +208,6 @@
     }
     #Contact h3{
         font-size: 2em;
-    }
-
-}
-@media (max-width: 426px) and (min-width: 375px){
-    #Contact section{
-        flex-direction: column;
-        gap: 3em;
-    }
-    #Contact h3{
-        font-size: 2em;
-    }
-
-    #Contact #form div>input,textarea{
-        font-size: 15px;
-        width: 300px;
-    }
-    #Contact #form div>textarea{
-        width: 300px;
-    }
-    #Contact #find>div:first-child{
-        width: 270px;
     }
 
 }
@@ -250,10 +229,34 @@
         width: 300px;
     }
     #Contact #find>div:first-child{
-        width: 270px;
+        width: 300px;
     }
 
 }
+
+@media (max-width: 426px) and (min-width: 375px){
+    #Contact section{
+        flex-direction: column;
+        gap: 3em;
+    }
+    #Contact h3{
+        font-size: 2em;
+    }
+
+    #Contact #form div>input,textarea{
+        font-size: 15px;
+        width: 300px;
+    }
+    #Contact #form div>textarea{
+        width: 300px;
+    }
+    #Contact #find>div:first-child{
+        width: 300px;
+    }
+
+}
+
+
 
 @media (max-width: 376px)and (min-width: 219px){
     #Contact section{
@@ -266,12 +269,12 @@
 
     #Contact #form div>input,textarea{
         font-size: 15px;
-        width: 250px;
+        width: 300px;
     }
     #Contact #form div>textarea{
-        width: 250px;
+        width: 300px;
     }
     #Contact #find>div:first-child{
-        width: 220px;
+        width: 300px;
     }
 }
