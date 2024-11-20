@@ -50,6 +50,12 @@
     font-weight: bold;
 }
 
+@media (max-width: 1024px) and (min-width: 769px){
+    #certification h1{
+        font-size: 2.5em;
+    }
+}
+
 @media (max-width: 768px) and (min-width: 426px){
     #certification h1{
         font-size: 2em;
@@ -76,7 +82,7 @@
 
 @media (max-width: 376px)and (min-width: 219px){
     #certification h1{
-        font-size: 1.9em;
+        font-size: 2em;
     }
     .certification-content {
         justify-content: center;

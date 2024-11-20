@@ -49,6 +49,9 @@
     .box{
         width: 450px;
     }
+    .box h1{
+        font-size: 2.5em;
+    }
 }
 @media (max-width: 768px) and (min-width: 426px){
     .mapSec {
@@ -56,6 +59,7 @@
         margin: 0 auto;
     }
     .box h1{
+        font-size: 2em;
         justify-content: center;
     }
     .box p {
@@ -74,6 +78,7 @@
     }
 
     .box h1{
+        font-size: 2em;
         justify-content: center;
     }
     .box p {
@@ -92,6 +97,7 @@
     }
 
     .box h1{
+        font-size: 2em;
         justify-content: center;
     }
     .box p {
