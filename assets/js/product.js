@@ -34,10 +34,10 @@ const swiper = new Swiper('.slider-wrapper', {
             slidesPerView: 1
         },
         600: {
-            slidesPerView: 2
+            slidesPerView: 1
         },
         768: {
-            slidesPerView: 2
+            slidesPerView: 1
         },
         978: {
             slidesPerView: 3
