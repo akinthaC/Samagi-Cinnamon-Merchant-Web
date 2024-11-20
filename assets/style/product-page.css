@@ -39,7 +39,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.27);
     user-select: none;
     box-sizing: border-box;
 }
@@ -48,7 +48,14 @@
     width: 90%;
     height: auto;
     max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card-item > img:hover {
+    transform: scale(1.1); /* Zoom in */
+
+}
+
 
 .card-item .badge{
     font-weight: bold;
@@ -75,7 +82,17 @@
     margin-top:-50px!important; ;
 }
 
+@media (max-width: 1024px) and (min-width: 769px){
+    .products>h1{
+        font-size: 2.5em;
+    }
+}
 
+@media (max-width: 768px) {
+    .products>h1{
+        font-size: 2em;
+    }
+}
 
 /* Base styles remain the same */
 
