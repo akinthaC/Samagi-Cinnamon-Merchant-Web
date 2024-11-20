@@ -16,7 +16,12 @@
     <link rel="stylesheet" href="assets/style/certification-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- WOW.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 </head>
 <body>
 <header class="header">
@@ -40,16 +45,16 @@
 </header>
 
 
-<section id="Home" class="hero" data-aos="zoom-in" data-aos-duration="2000">
+<section id="Home" class="hero">
     <main class="container">
 
     <div class="content">
-            <h4 >Our Vision</h4>
-            <p>
+            <h4 class="wow animate__animated animate__zoomIn">Our Vision</h4>
+            <p class="wow animate__animated animate__zoomIn">
                 All export crops, including cinnamon, are bought at higher prices, giving more employment opportunities to the villagers.
             </p>
-            <h4 >Our Mission</h4>
-            <p>
+            <h4 class="wow animate__animated animate__zoomIn">Our Mission</h4>
+            <p class="wow animate__animated animate__zoomIn">
                 All the exports received by us are produced with quality and standards using crop health protection methods and released to the market.
             </p>
         <div>
@@ -61,8 +66,6 @@
                 <li></li>
             </ul>
         </div>
-
-
     </div>
 
 </main>
@@ -113,19 +116,19 @@
 <section id="About" class="about">
 
     <main class="container" >
-        <div class="aboutDiv1" data-aos="zoom-in-up" data-aos-duration="2000">
+        <div class="aboutDiv1">
             <h1>About Us</h1>
             <h3 class="aboutH3">Since 2017...</h3>
 
-            <p id="aboutParagraph1">
+            <p id="aboutParagraph1" class="wow animate__animated animate__zoomIn">
                 Samagi Cinnamon, your trusted partner in the world of premium spices. Established in the heart of Sri Lanka, in Katandola, we specialize in exporting the finest quality Ceylon cinnamon, pepper, cardamom, and a variety of other spices.
             </p>
 
-            <p id="aboutParagraph2">
+            <p id="aboutParagraph2" class="wow animate__animated animate__zoomIn">
                 With a dedication to excellence, we ensure that every spice we export meets the highest standards of quality and flavor, sourced directly from local farmers and processed with care.
             </p>
 
-            <p id="aboutParagraph3">
+            <p id="aboutParagraph3" class="wow animate__animated animate__zoomIn">
                 At Samagi Cinnamon, we value sustainability, ethical sourcing, and building long-term relationships with both our suppliers and clients. We believe in promoting fair trade practices and contributing to the well-being of our community while delivering products that satisfy the most discerning tastes.
             </p>
         </div>
@@ -139,7 +142,7 @@
     <main class="container2">
         <div class="video-container">
             <!-- Video 1 -->
-            <div class="video-item" data-aos="zoom-in-left" data-aos-duration="3000">
+            <div class="video-item wow animate__animated animate__fadeInRight">
                 <div class="info1">
                     <h2 class="video-title"> Cinnamon from Ceylon</h2>
                     <h4 class="video-description">video title 01 description</h4>
@@ -153,7 +156,7 @@
             </div>
 
             <!-- Video 2 -->
-            <div class="video-item" data-aos="zoom-in-right" data-aos-duration="3000">
+            <div class="video-item wow animate__animated animate__fadeInLeft">
                 <div class="video-thumbnail">
                     <!-- Replace with your actual video thumbnail -->
                     <iframe width="500" height="325" src="https://www.youtube.com/embed/T7_HfHRIUhM?si=11eafLNM1i8ppV-eenablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -232,7 +235,7 @@
 <section class="img">
 <section class="products">
     <h1>Our products</h1>
-    <main class="container3 swiper" data-aos="zoom-in-up" data-aos-duration="2000">
+    <main class="container3 swiper wow animate__animated animate__zoomIn">
         <div class="slider-wrapper ">
             <div class="card-list swiper-wrapper">
                 <div class="card-item swiper-slide">
@@ -263,15 +266,15 @@
 <section id="certification">
     <h1>We are certified........</h1>
     <div class="certification-content">
-        <div class="cert-item" data-aos="flip-right" data-aos-duration="2000">
+        <div class="cert-item wow animate__animated animate__zoomIn">
             <img src="assets/images/gmp.png" alt="GMP Certified" class="cert-icon">
             <p>GMP certification helps ensure that products are consistently produced and controlled to quality standards.</p>
         </div>
-        <div class="cert-item" data-aos="flip-left" data-aos-duration="2000">
+        <div class="cert-item wow animate__animated animate__zoomIn" data-aos="flip-left" data-aos-duration="2000">
             <img src="assets/images/reportsCertification.png" alt="Lab Reports" class="cert-icon">
             <p>Our lab reports ensure the quality, safety, and purity of our products, reflecting our commitment to delivering premium spices you can trust.</p>
         </div>
-        <div class="cert-item" data-aos="flip-right" data-aos-duration="2000">
+        <div class="cert-item wow animate__animated animate__zoomIn" data-aos="flip-right" data-aos-duration="2000">
             <img src="assets/images/slLogo.png" alt="Lab Reports" class="cert-icon">
             <p>
                 Samagi Cinnamon is a government-registered Sri Lankan business, exporting premium spices with global certifications for quality.</p>
@@ -284,7 +287,7 @@
 <section id="Contact">
     <h3>Contact us</h3>
     <section>
-        <div class="wow animate_animated animate_zoomInRight" data-aos="zoom-out-up" data-aos-duration="3000" id="form">
+        <div class="wow animate__animated animate__zoomIn" id="form">
             <form action="https://formsubmit.co/your@email.com" method="POST">
                 <div>
                     <input type="text" name="name" id="name" placeholder="Enter your name?" required>
@@ -303,22 +306,22 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
-        <div id="find">
+        <div class="wow animate__animated animate__zoomIn" id="find">
             <div>
                 <h2>Find us</h2>
-                <p data-aos="zoom-in" data-aos-duration="3000">Email us - <br>
+                <p>Email us - <br>
                     samagicinnamon@gmail.com
                 </p>
-                <p data-aos="zoom-in" data-aos-duration="3000">Contact us - <br>
+                <p>Contact us - <br>
                     +39665464646456
                 </p>
-                <p data-aos="zoom-in" data-aos-duration="3000">Address - <br>
+                <p>Address - <br>
                     260/1, Weralu Anduwawa,<br>
                     Mahan Edanda,Karandeniya<br>
                     Sri Lanka
                 </p>
             </div>
-            <div data-aos="zoom-out-up">
+            <div>
                 <span>Follow us on  </span>
                 <a href="#" target="_blank"><img src="./assets/images/facebook.png" title="socialImage" alt="socialImg"></a>
                 <a href="#" target="_blank"><img src="./assets/images/tiktok.png" title="socialImage" alt="socialImg"></a>
@@ -331,12 +334,12 @@
     <main class="container">
         <section class="mapSec">
         <div class="box">
-            <h1>Our Location</h1>
-            <p data-aos="zoom-out-up" data-aos-duration="3000">
+            <h1 class="wow animate__animated animate__fadeInLeft" data-wow-duration="2s">Our Location</h1>
+            <p>
                 Our headquarters in Katandola, Galle District, Sri Lanka, is surrounded by lush landscapes, allowing us to source the freshest spices directly from local farms for exceptional quality and authenticity.            </p>
         </div>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.238319906242!2d80.47533587482806!3d6.0985708938878265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae142429876b8e3%3A0x583fc9ea4b9a0661!2sSamagi%20Spice%20Exports!5e0!3m2!1sen!2slk!4v1730561108234!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            <iframe class="wow animate__animated animate__zoomIn" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.238319906242!2d80.47533587482806!3d6.0985708938878265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae142429876b8e3%3A0x583fc9ea4b9a0661!2sSamagi%20Spice%20Exports!5e0!3m2!1sen!2slk!4v1730561108234!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
             </iframe>
 
@@ -349,7 +352,7 @@
 <footer class="footer">
     <main class="container">
         <!-- Navigation Section -->
-        <div class="nav">
+        <div class="nav wow animate__animated animate__fadeInLeft">
 
             <h2>Quick Links....</h2>
             <a href="#Home">>>> Home</a>
@@ -364,7 +367,7 @@
         </div>
 
         <!-- Logo Section -->
-        <div class="logo">
+        <div class="logo wow animate__animated animate__fadeInRight">
             <img src="assets/images/heroSection/logo.png" alt="Company Logo">
         </div>
     </main>
@@ -428,9 +431,8 @@
     });
 </script>
 <script src="assets/js/animation.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    new WOW().init();
 </script>
 </body>
 </html>
