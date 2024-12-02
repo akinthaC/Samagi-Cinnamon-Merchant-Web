@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- WOW.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!--sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </head>
 <body>
@@ -281,13 +284,13 @@
     </div>
 
 </section>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <!--contact-->
 <section id="Contact">
     <h3>Contact us</h3>
     <section>
         <div class="wow animate__animated animate__zoomIn" id="form">
-            <form action="https://formsubmit.co/el/confirm/d2ae82683dae7d8306aa4fae62b84157" method="POST">
+            <form action="" method="POST" id="contact-form">
                 <div>
                     <input type="text" name="name" id="name" placeholder="Enter your name?" required>
                 </div>
@@ -378,6 +381,7 @@
         document.querySelector('nav ul').classList.toggle('show');
     });
 </script>
+<script src="assets/js/email.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="assets/js/product.js"></script>
 <script type="text/javascript">
@@ -429,6 +433,8 @@
         navMenu.classList.toggle('show-menu');
     });
 </script>
+<script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
 <script src="assets/js/animation.js"></script>
 <script>
     new WOW().init();
