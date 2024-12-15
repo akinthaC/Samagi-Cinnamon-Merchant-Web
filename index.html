@@ -2,9 +2,10 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Samagi-Cinnamon-Merchant</title>
-    <link rel="stylesheet" href="assets/style/normalize.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samagi-Cinnamon-Merchant</title>
+
+    <link rel="stylesheet" href="assets/style/normalize.css">
     <link rel="stylesheet" href="assets/style/home-page.css">
     <link rel="stylesheet" href="assets/style/about-page.css">
     <link rel="stylesheet" href="assets/style/review-page.css">
@@ -16,6 +17,13 @@
     <link rel="stylesheet" href="assets/style/certification-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -370,13 +378,13 @@
     </main>
 </footer>
 
-
 <script>
     document.querySelector('.hamburger').addEventListener('click', function() {
         document.querySelector('nav ul').classList.toggle('show');
     });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="assets/js/product.js"></script>
 <script type="text/javascript">
     var slider = document.querySelectorAll('.updateSlide');
@@ -428,6 +436,7 @@
     });
 </script>
 <script src="assets/js/animation.js"></script>
+<script src="assets/js/email.js"></script>
 <script>
     new WOW().init();
 </script>
